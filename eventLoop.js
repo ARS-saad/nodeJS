@@ -8,7 +8,8 @@ fs.readFile(__filename, () => {
   console.log("This is read file");
 });
 setTimeout(() => console.log("This is a time out"), 0);
-setTimeout(() => console.log("This is a time out"), 500);
-setTimeout(() => console.log("This is a time out"), 1000);
+// setTimeout(() => console.log("This is a time out"), 500);
+// setTimeout(() => console.log("This is a time out"), 1000);
 Promise.resolve().then(() => console.log("This is Promise.resolve 1"));
 process.nextTick(() => console.log("this is a process.nextTick 1"));
+setImmediate(() => console.log("This is setImmediate"));
