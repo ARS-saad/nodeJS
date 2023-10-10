@@ -2,6 +2,9 @@
 // process.nextTick(() => console.log("This is process.next 1"));
 // console.log("console.log 2");
 
+const OS = require("node:os");
+console.log(OS.cpus().length);
+
 const fs = require("fs");
 
 fs.readFile(__filename, () => {
